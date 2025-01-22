@@ -16,7 +16,7 @@ Education
 
 Work experience
 ======
-* Postdoc in University of California, Berkeley [Prof. Dr. Trevor Keenan]
+* Postdoc in University of California, Berkeley [Prof. Dr. Trevor Keenan], 2024.11 - Now
   
 Skills
 ======
