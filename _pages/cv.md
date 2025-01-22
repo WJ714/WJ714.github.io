@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Max Planck Institue for Biogeochemisty [Dr. Martin Jung & Dr. Jacob Nelson [core advisors], Prof. Dr. Markus Reichstein [core collabrator]] and Ghent Univerisity [Prof. dr. Diego Miralles [core advisor]], 2024
-* M.S. in Tree ring and Paleo climate change, Nanjing University, 2020
+* Ph.D. at Max Planck Institute for Biogeochemistry [Dr. Martin Jung & Dr. Jacob Nelson (core advisors), Prof. Dr. Markus Reichstein (core collaborator)] and Ghent University [Prof. Dr. Diego Miralles (core advisor)], 2024
+* M.S. in Tree Ring and Paleoclimate Change, Nanjing University, 2020
 
 Work experience
 ======
