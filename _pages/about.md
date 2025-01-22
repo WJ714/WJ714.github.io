@@ -9,7 +9,7 @@ redirect_from:
 
 Introduction
 ======
-Our planet absorbs energy from the Sun. The overall imbalnace on the top of atmosphere is small (i.e., incorming shortwave radiation is similar to the sum of outgoing shortwave radiation and outgoing longwave radiation), however, there is slight imbalance on the earth surface due to the global (surface) warming since past decades. Scientists diagnost that the main reasons are the increasing green-house gas emission (incl. $CO_2$, $CH_4$, $H_2O$, etc.)  
+Our planet absorbs energy from the Sun. While the overall energy imbalance at the top of the atmosphere is small—meaning the incoming shortwave radiation is nearly equal to the sum of outgoing shortwave and longwave radiation—there is a slight imbalance at the Earth's surface. This imbalance has been exacerbated over the past decades due to global surface warming. Scientists attribute this primarily to the increasing emissions of greenhouse gases, including carbon dioxide ($CO_2$), methane ($CH_4$), and water vapor ($H_2O$), among others.
 
 A data-driven personal website
 ======
