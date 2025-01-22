@@ -11,26 +11,12 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Max Planck Institue for Biogeochemisty [Dr. Martin Jung & Dr. Jacob Nelson [core advisors], Prof. Dr. Markus Reichstein [core collabrator]] and Ghent Univerisity [Prof. dr. Diego Miralles [core advisor]], 2024
+* M.S. in Tree ring and Paleo climate change, Nanjing University, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Postdoc in University of California, Berkeley [Prof. Dr. Trevor Keenan]
   
 Skills
 ======
