@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "My Understanding On Surface Energy Balance, Global Warming, and Carbon-Water Cycles"
+title: "My Understanding On Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle"
 author_profile: true
 redirect_from: 
   - /about/
