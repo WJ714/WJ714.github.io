@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "My Understanding On Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle"
+title: "Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle"
 author_profile: true
 redirect_from: 
   - /about/
@@ -10,7 +10,8 @@ redirect_from:
 Introduction
 ======
 Our planet absorbs energy from the Sun.
-While the overall energy imbalance at the top of the atmosphere is small—meaning the incoming shortwave radiation is nearly equal to the sum of outgoing shortwave and longwave radiation—there is a slight imbalance at the Earth's surface. This imbalance has been exacerbated over the past decades due to global surface warming. Scientists attribute this primarily to the increasing emissions of greenhouse gases, including carbon dioxide ($'CO_2'$), methane ($'CH_4'$), and water vapor ($'H_2O'$), among others.
+
+While the overall energy imbalance at the top of the atmosphere is small—meaning the incoming shortwave radiation is nearly equal to the sum of outgoing shortwave and longwave radiation—there is a slight imbalance at the Earth's surface. This imbalance has been exacerbated over the past decades due to global surface warming. Scientists attribute this primarily to the increasing emissions of greenhouse gases, including carbon dioxide ($$CO_2$$), methane ($$CH_4$$), and water vapor ($H_2O$), among others.
 
 A data-driven personal website
 ======
