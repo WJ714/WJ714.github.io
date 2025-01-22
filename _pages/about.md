@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Current Understanding On Surface Energy Balance Closure"
+title: "My Understanding On Surface Energy Balance Closure"
 author_profile: true
 redirect_from: 
   - /about/
