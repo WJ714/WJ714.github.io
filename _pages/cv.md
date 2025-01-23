@@ -1,7 +1,7 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
+permalink: /https://WJ714.github.io/
 author_profile: true
 redirect_from:
   - /resume
