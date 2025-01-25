@@ -12,8 +12,8 @@ title                    : "Dr. Weijie Zhang"
 title_separator          : "-"
 name                     : &name "Your Name"
 description              : &description "personal description"
-url                      : "https://WJ714.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
-baseurl                  : "https://WJ714.github.io" # the subpath of your site, e.g. "/blog"
+url                      : https://WJ714.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+baseurl                  : #"https://WJ714.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "WJ714/WJ714.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
