@@ -1,51 +1,56 @@
-/* Custom Navigation Centering - High Specificity Override */
-.masthead .masthead__inner-wrap .masthead__menu .greedy-nav .visible-links {
-  display: table !important;
+/* FORCE NAVIGATION LAYOUT - Simple Flexbox */
+.greedy-nav .visible-links {
+  display: flex !important;
+  align-items: center !important;
   width: 100% !important;
-  table-layout: fixed !important;
   
-  li.masthead__menu-item {
-    display: table-cell !important;
-    vertical-align: middle !important;
-    
-    /* Keep site title (first item) on the left */
-    &:first-child {
-      text-align: left !important;
-      width: 25% !important;
-      padding-right: 1rem;
-    }
-    
-    /* Center the navigation menu items in the remaining space */
-    &:not(:first-child):not(:last-child) {
-      text-align: center !important;
-      width: calc(75% / 4) !important; /* Distribute remaining space equally among 4 menu items */
-    }
-    
-    /* Theme toggle button stays on the right */
-    &:last-child {
-      text-align: right !important;
-      width: auto !important;
-    }
-    
-    a {
-      display: block !important;
-      padding: 0.5rem 0.5rem !important;
-      margin: 0 auto !important;
-      text-align: inherit !important;
-    }
+  /* Site title stays on the left */
+  li:first-child {
+    flex: 0 0 auto !important;
+    margin-right: 2rem !important;
+  }
+  
+  /* Navigation menu items get equal space in the center */
+  li:nth-child(2), 
+  li:nth-child(3), 
+  li:nth-child(4), 
+  li:nth-child(5), 
+  li:nth-child(6) {
+    flex: 1 !important;
+    text-align: center !important;
+  }
+  
+  /* Theme toggle on the right */
+  li:last-child {
+    flex: 0 0 auto !important;
+    margin-left: 2rem !important;
+  }
+  
+  /* All menu item links */
+  li a {
+    display: block !important;
+    padding: 0.5rem 0.5rem !important;
+    text-align: inherit !important;
+    margin: 0 !important;
   }
 }
 
-/* Responsive adjustments */
+/* Mobile responsive */
 @media (max-width: 768px) {
-  .masthead .masthead__inner-wrap .masthead__menu .greedy-nav .visible-links {
-    li.masthead__menu-item:first-child {
-      width: 30% !important;
+  .greedy-nav .visible-links {
+    flex-wrap: nowrap !important;
+    
+    li:first-child {
+      margin-right: 1rem !important;
     }
     
-    li.masthead__menu-item:not(:first-child):not(:last-child) {
-      width: calc(70% / 4) !important;
-      font-size: 0.9rem;
+    li:last-child {
+      margin-left: 1rem !important;
+    }
+    
+    li a {
+      padding: 0.5rem 0.3rem !important;
+      font-size: 0.9rem !important;
     }
   }
 }
