@@ -18,7 +18,7 @@
     /* Center the navigation menu items in the remaining space */
     &:not(:first-child) {
       text-align: center;
-      width: calc(80% / 6); /* Distribute remaining space equally among menu items */
+      width: calc(80% / 4); /* Distribute remaining space equally among 4 menu items */
     }
   }
 }
@@ -48,7 +48,7 @@
     }
     
     li:not(:first-child) {
-      width: calc(70% / 5);
+      width: calc(70% / 4);
       font-size: 0.9rem;
     }
   }
