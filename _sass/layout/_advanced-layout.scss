@@ -1,0 +1,77 @@
+/* ADVANCED LAYOUT - Move sidebar to far left, expand content */
+
+@media (min-width: 1024px) {
+  /* Move the author profile sidebar to the far left */
+  .sidebar {
+    position: fixed !important;
+    left: 0 !important;
+    top: 80px !important;
+    width: 250px !important;
+    height: calc(100vh - 80px) !important;
+    overflow-y: auto !important;
+    padding: 1rem !important;
+    background: var(--global-bg-color) !important;
+    border-right: 1px solid var(--global-border-color) !important;
+    z-index: 10 !important;
+  }
+  
+  /* Adjust the main content to use full remaining width */
+  #main {
+    margin-left: 270px !important; /* Account for sidebar width + margin */
+    width: calc(100% - 290px) !important;
+    max-width: none !important;
+  }
+  
+  /* Make the main content article use full width */
+  .page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2rem !important;
+  }
+  
+  article.page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2rem !important;
+  }
+  
+  /* Ensure the content spans the full width */
+  .page__inner-wrap {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  
+  .page__content {
+    max-width: none !important;
+    width: 100% !important;
+  }
+  
+  /* Special handling for homepage with research sidebar */
+  .page-with-sidebar {
+    #main {
+      margin-left: 270px !important;
+      width: calc(100% - 610px) !important; /* Account for both sidebars */
+    }
+    
+    .page {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 2rem !important;
+    }
+  }
+}
+
+/* Mobile responsive - keep original layout */
+@media (max-width: 1023px) {
+  .sidebar {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    margin-bottom: 2rem !important;
+  }
+  
+  #main {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+}
