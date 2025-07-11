@@ -1,139 +1,152 @@
 {
   "basics": {
-    "name": "Dr. Weijie Zhang",
-    "label": "Post-doctoral Researcher",
-    "image": "IMG_6331.png",
-    "email": "weijie.zhang@berkeley.edu",
-    "url": "https://WJ714.github.io",
-    "summary": "Post-doctoral researcher at UC Berkeley specializing in biogeochemistry, ecosystem dynamics, and climate-ecosystem interactions. Expertise in tree ring analysis, remote sensing, and climate modeling.",
+    "name": "Your Sidebar Name",
+    "email": "none@example.org",
+    "phone": "",
+    "website": "https://academicpages.github.io",
+    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
     "location": {
-      "city": "Berkeley",
+      "address": "",
+      "postalCode": "",
+      "city": "Earth",
       "countryCode": "US",
-      "region": "California"
+      "region": ""
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "Weijie Zhang",
-        "url": "https://scholar.google.com/citations?user=419UbOkAAAAJ"
+        "username": "",
+        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "0000-0002-8658-8815",
-        "url": "https://orcid.org/0000-0002-8658-8815"
-      },
-      {
-        "network": "ResearchGate",
-        "username": "Weijie-Zhang-27",
-        "url": "https://www.researchgate.net/profile/Weijie-Zhang-27/research"
+        "username": "",
+        "url": "http://orcid.org/yourorcidurl"
       },
       {
         "network": "GitHub",
-        "username": "WJ714",
-        "url": "https://github.com/WJ714"
+        "username": "academicpages",
+        "url": "https://github.com/academicpages"
       }
     ]
   },
+  "work": [],
   "education": [
     {
-      "institution": "Max Planck Institute for Biogeochemistry & Ghent University",
-      "location": "Jena, Germany & Ghent, Belgium",
-      "url": "https://www.bgc-jena.mpg.de/",
-      "area": "Biogeochemistry",
-      "studyType": "Ph.D.",
-      "startDate": "2020",
-      "endDate": "2024",
-      "score": "",
-      "courses": [
-        "Ecosystem dynamics and carbon cycle",
-        "Remote sensing applications",
-        "Climate-ecosystem interactions"
-      ],
-      "advisors": "Dr. Martin Jung, Dr. Jacob Nelson, Prof. Dr. Markus Reichstein, Prof. Dr. Diego Miralles"
+      "institution": "GitHub University",
+      "area": "Ph.D in Version Control Theory",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2018",
+      "gpa": null,
+      "courses": []
     },
     {
-      "institution": "Nanjing University",
-      "location": "Nanjing, China",
-      "url": "https://www.nju.edu.cn/EN/",
-      "area": "Tree Ring and Paleoclimate Change",
-      "studyType": "M.S.",
-      "startDate": "2017",
-      "endDate": "2020",
-      "score": "",
-      "courses": [
-        "Dendrochronology",
-        "Paleoclimate reconstruction",
-        "Statistical analysis of climate data"
-      ]
-    }
-  ],
-  "work": [
-    {
-      "name": "University of California, Berkeley",
-      "position": "Post-doctoral Researcher",
-      "location": "Berkeley, CA",
-      "url": "https://www.berkeley.edu/",
-      "startDate": "2024-11",
-      "endDate": "Present",
-      "summary": "Conducting research on ecosystem dynamics and carbon cycle processes under Prof. Trevor Keenan.",
-      "highlights": [
-        "Analyzing global carbon cycle dynamics",
-        "Developing ecosystem models",
-        "Remote sensing data processing and analysis"
-      ]
-    }
-  ],
-  "skills": [
-    {
-      "name": "Data Analysis & Statistical Modeling",
-      "level": "Expert",
-      "keywords": [
-        "Time series analysis",
-        "Machine learning applications in ecology",
-        "Remote sensing data processing",
-        "Statistical modeling"
-      ]
+      "institution": "GitHub University",
+      "area": "M.S. in Jekyll",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2014",
+      "gpa": null,
+      "courses": []
     },
     {
-      "name": "Programming & Software",
-      "level": "Expert",
-      "keywords": [
-        "Python",
-        "R",
-        "MATLAB",
-        "GIS and remote sensing tools",
-        "Climate and ecosystem modeling"
-      ]
-    },
-    {
-      "name": "Research Areas",
-      "level": "Expert",
-      "keywords": [
-        "Biogeochemistry and ecosystem dynamics",
-        "Tree ring and paleoclimate analysis",
-        "Carbon cycle and climate interactions",
-        "Remote sensing applications"
-      ]
+      "institution": "GitHub University",
+      "area": "B.S. in GitHub",
+      "studyType": "",
+      "startDate": "",
+      "endDate": "2012",
+      "gpa": null,
+      "courses": []
     }
   ],
-  "languages": [
+  "skills": [],
+  "languages": [],
+  "interests": [],
+  "references": [],
+  "publications": [
     {
-      "language": "English",
-      "fluency": "Professional"
+      "name": "Paper Title Number 1",
+      "publisher": "Journal 1",
+      "releaseDate": "2009-10-01",
+      "website": "http://academicpages.github.io/files/paper1.pdf",
+      "summary": "This paper is about the number 1. The number 2 is left for future work."
     },
     {
-      "language": "Chinese",
-      "fluency": "Native"
+      "name": "Paper Title Number 2",
+      "publisher": "Journal 1",
+      "releaseDate": "2010-10-01",
+      "website": "http://academicpages.github.io/files/paper2.pdf",
+      "summary": "This paper is about the number 2. The number 3 is left for future work."
+    },
+    {
+      "name": "Paper Title Number 3",
+      "publisher": "Journal 1",
+      "releaseDate": "2015-10-01",
+      "website": "http://academicpages.github.io/files/paper3.pdf",
+      "summary": "This paper is about the number 3. The number 4 is left for future work."
+    },
+    {
+      "name": "Paper Title Number 4",
+      "publisher": "GitHub Journal of Bugs",
+      "releaseDate": "2024-02-17",
+      "website": "http://academicpages.github.io/files/paper3.pdf",
+      "summary": "This paper is about fixing template issue #693."
     }
   ],
-  "interests": [
+  "presentations": [
     {
-      "name": "Climate Science",
-      "keywords": [
-        "Ecosystem dynamics",
-        "Carbon cycle",
-        "Climate-ecosystem interactions"
-      ]
+      "name": "Talk 1 on Relevant Topic in Your Field",
+      "event": "UC San Francisco, Department of Testing",
+      "date": "2012-03-01",
+      "location": "San Francisco, CA, USA",
+      "description": ""
+    },
+    {
+      "name": "Tutorial 1 on Relevant Topic in Your Field",
+      "event": "UC-Berkeley Institute for Testing Science",
+      "date": "2013-03-01",
+      "location": "Berkeley, CA, USA",
+      "description": ""
+    },
+    {
+      "name": "Talk 2 on Relevant Topic in Your Field",
+      "event": "London School of Testing",
+      "date": "2014-02-01",
+      "location": "London, UK",
+      "description": ""
+    },
+    {
+      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
+      "event": "Testing Institute of America 2014 Annual Conference",
+      "date": "2014-03-01",
+      "location": "Los Angeles, CA, USA",
+      "description": ""
+    }
+  ],
+  "teaching": [
+    {
+      "course": "Teaching experience 1",
+      "institution": "University 1, Department",
+      "date": "2014-01-01",
+      "role": "Undergraduate course",
+      "description": ""
+    },
+    {
+      "course": "Teaching experience 2",
+      "institution": "University 1, Department",
+      "date": "2015-01-01",
+      "role": "Workshop",
+      "description": ""
+    }
+  ],
+  "portfolio": [
+    {
+      "name": "Portfolio item number 1",
+      "category": "portfolio",
+      "date": "",
+      "url": "",
+      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
     }
   ]
 }

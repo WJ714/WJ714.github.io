@@ -7,7 +7,6 @@ redirect_from:
   - /about.html
 ---
 
-
 Introduction
 ======
 Our planet absorbs energy from the Sun.
@@ -32,5 +31,3 @@ Water Cycle
 
 Water-Carbon Couplings
 ------
-
-
