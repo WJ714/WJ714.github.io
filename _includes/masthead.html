@@ -3,7 +3,35 @@
 <div class="masthead">
   <div class="masthead__inner-wrap">
     <div class="masthead__menu">
-      <nav id="site-nav" class="greedy-nav">
+      <!-- Custom Navigation Layout -->
+      <nav id="site-nav" class="custom-nav-layout">
+        <!-- Site Title on Left -->
+        <div class="nav-left">
+          <a href="{{ base_path }}/" class="site-title">{{ site.title }}</a>
+        </div>
+        
+        <!-- Navigation Items Spread Across Center -->
+        <div class="nav-center">
+          {% for link in site.data.navigation.main %}
+            {% if link.url contains 'http' %}
+              {% assign domain = '' %}
+            {% else %}
+              {% assign domain = base_path %}
+            {% endif %}
+            <a href="{{ domain }}{{ link.url }}" class="nav-item">{{ link.title }}</a>
+          {% endfor %}
+        </div>
+        
+        <!-- Theme Toggle on Right -->
+        <div class="nav-right">
+          <a role="button" aria-labelledby="theme-icon" id="theme-toggle">
+            <i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i>
+          </a>
+        </div>
+      </nav>
+      
+      <!-- Keep original for mobile fallback -->
+      <nav id="site-nav-original" class="greedy-nav" style="display: none;">
         <button><div class="navicon"></div></button>
         <ul class="visible-links">
           <li class="masthead__menu-item masthead__menu-item--lg persist"><a href="{{ base_path }}/">{{ site.title }}</a></li>
@@ -15,8 +43,8 @@
             {% endif %}
             <li class="masthead__menu-item"><a href="{{ domain }}{{ link.url }}">{{ link.title }}</a></li>
           {% endfor %}
-          <li id="theme-toggle" class="masthead__menu-item persist tail">
-            <a role="button" aria-labelledby="theme-icon"><i id="theme-icon" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
+          <li id="theme-toggle-original" class="masthead__menu-item persist tail">
+            <a role="button" aria-labelledby="theme-icon-original"><i id="theme-icon-original" class="fa-solid fa-sun" aria-hidden="true" title="toggle theme"></i></a>
           </li>
         </ul>
         <ul class="hidden-links hidden"></ul>
