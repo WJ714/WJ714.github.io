@@ -204,6 +204,8 @@
 
   .visible-links {
     display: table;
+    width: 100%;
+    table-layout: fixed;
 
     li {
       display: table-cell;
@@ -212,6 +214,8 @@
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
+        text-align: left;
+        width: 25%;
 
         a {
           margin-left: 0;
@@ -220,6 +224,7 @@
 
       &:not(:first-child) {
         text-align: center;
+        width: auto;
       }
 
       &:last-child {
@@ -229,26 +234,6 @@
       }
     }
   }
-
-  /* Center only the navigation items, not the site title */
-  .masthead__menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    .visible-links {
-      width: 100%;
-      
-      /* Keep first item (site title) on the left */
-      li:first-child {
-        text-align: left;
-      }
-      
-      /* Center the navigation menu items */
-      li:not(:first-child) {
-        text-align: center;
-      }
-    }
 
     a {
       position: relative;

@@ -1,24 +1,48 @@
-/* Custom styles for centered navigation menu items only */
+/* Custom styles for centered navigation menu items */
 
 .greedy-nav .visible-links {
-  /* Keep the original table display */
   display: table;
   width: 100%;
+  table-layout: fixed;
   
   li {
     display: table-cell;
     vertical-align: middle;
     
-    /* Keep site title (first item) on the left as original */
+    /* Keep site title (first item) on the left */
     &:first-child {
       text-align: left;
-      width: auto;
+      width: 20%;
+      padding-right: 1rem;
     }
     
-    /* Center only the navigation menu items */
+    /* Center the navigation menu items in the remaining space */
     &:not(:first-child) {
       text-align: center;
-      width: auto;
+      width: calc(80% / 6); /* Distribute remaining space equally among menu items */
     }
   }
+}
+
+/* Ensure navigation items are properly spaced and centered */
+.masthead__menu .visible-links {
+  li:not(:first-child) {
+    a {
+      display: block;
+      padding: 0.5rem 0.5rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Fix any potential spacing issues with the masthead */
+body {
+  padding-top: 0;
+  margin-top: 0;
+}
+
+/* Ensure main content isn't hidden behind fixed masthead */
+#main {
+  margin-top: 4rem; /* Adjust this value based on actual masthead height */
 }
