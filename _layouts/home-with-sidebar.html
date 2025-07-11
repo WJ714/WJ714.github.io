@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {{ content }}
+      </section>
+    </div>
+  </article>
+
+  <!-- Right Sidebar with Images and Plots -->
+  <div class="page__right-sidebar">
+    <div class="sidebar-widget">
+      <h3>Research Highlights</h3>
+      
+      <!-- Featured Publication Figure -->
+      <div class="sidebar-item">
+        <img src="{{ base_path }}/images/paper-figure-1.png" alt="Figure 1 from 2023GL107084" class="sidebar-image">
+        <p class="sidebar-caption">Figure 1 from Zhang et al. (2023) - Geophysical Research Letters</p>
+        <p class="sidebar-text"><strong>DOI:</strong> <a href="https://agupubs.onlinelibrary.wiley.com/doi/10.1029/2023GL107084" target="_blank">10.1029/2023GL107084</a></p>
+      </div>
+
+      <!-- Research Plot 2 -->
+      <div class="sidebar-item">
+        <img src="{{ base_path }}/images/research-plot-2.svg" alt="Temperature Analysis" class="sidebar-image">
+        <p class="sidebar-caption">Temperature anomaly analysis across recent decades</p>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="sidebar-item stats-widget">
+        <h4>Quick Stats</h4>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Countries</span>
+        </div>
+      </div>
+
+      <!-- Recent Updates -->
+      <div class="sidebar-item">
+        <h4>Recent Updates</h4>
+        <ul class="recent-updates">
+          <li><strong>Nov 2024:</strong> Started postdoc at UC Berkeley</li>
+          <li><strong>2024:</strong> Completed Ph.D. at Max Planck Institute</li>
+          <li><strong>2020:</strong> M.S. from Nanjing University</li>
+        </ul>
+      </div>
+
+      <!-- Research Tools -->
+      <div class="sidebar-item">
+        <h4>Research Tools</h4>
+        <div class="tool-tags">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">R</span>
+          <span class="tool-tag">MATLAB</span>
+          <span class="tool-tag">GIS</span>
+          <span class="tool-tag">Remote Sensing</span>
+          <span class="tool-tag">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
