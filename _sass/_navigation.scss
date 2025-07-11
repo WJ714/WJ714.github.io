@@ -176,6 +176,18 @@
   position: relative;
   min-width: 250px;
   background: $background-color;
+  
+  @media (max-width: 768px) {
+    .visible-links {
+      flex-direction: column;
+      
+      li:first-child {
+        position: relative;
+        left: auto;
+        margin-bottom: 0.5rem;
+      }
+    }
+  }
 
   a {
     display: block;
@@ -203,19 +215,28 @@
   }
 
   .visible-links {
-    display: table;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
 
     li {
-      display: table-cell;
-      vertical-align: middle;
+      display: flex;
+      align-items: center;
 
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
+        position: absolute;
+        left: 1rem;
 
         a {
           margin-left: 0;
         }
+      }
+
+      &:not(:first-child) {
+        margin: 0 1rem;
       }
 
       &:last-child {
