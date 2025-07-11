@@ -11,35 +11,27 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D. at Max Planck Institute for Biogeochemistry [Dr. Martin Jung & Dr. Jacob Nelson (core advisors), Prof. Dr. Markus Reichstein (core collaborator)] and Ghent University [Prof. Dr. Diego Miralles (core advisor)], 2024
+* M.S. in Tree Ring and Paleoclimate Change, Nanjing University, 2020
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
-
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Postdoc in University of California, Berkeley [Prof. Dr. Trevor Keenan], 2024.11 - Now
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Data Analysis & Statistical Modeling
+  * Time series analysis
+  * Machine learning applications in ecology
+  * Remote sensing data processing
+* Programming & Software
+  * Python, R, MATLAB
+  * GIS and remote sensing tools
+  * Climate and ecosystem modeling
+* Research Areas
+  * Biogeochemistry and ecosystem dynamics
+  * Tree ring and paleoclimate analysis
+  * Carbon cycle and climate interactions
 
 Publications
 ======
@@ -61,4 +53,6 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Peer reviewer for scientific journals
+* Academic conference session organizer
+* Research collaboration coordination

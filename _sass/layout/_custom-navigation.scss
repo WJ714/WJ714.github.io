@@ -1,0 +1,55 @@
+/* Custom Navigation Centering */
+.greedy-nav .visible-links {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+  
+  li {
+    display: table-cell;
+    vertical-align: middle;
+    
+    /* Keep site title (first item) on the left */
+    &:first-child {
+      text-align: left;
+      width: 20%;
+      padding-right: 1rem;
+    }
+    
+    /* Center the navigation menu items in the remaining space */
+    &:not(:first-child) {
+      text-align: center;
+      width: calc(80% / 6); /* Distribute remaining space equally among menu items */
+    }
+  }
+}
+
+/* Ensure navigation items are properly spaced and centered */
+.masthead__menu .visible-links {
+  li:not(:first-child) {
+    a {
+      display: block;
+      padding: 0.5rem 0.5rem;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}
+
+/* Ensure main content isn't hidden behind fixed masthead */
+#main {
+  margin-top: 1rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .greedy-nav .visible-links {
+    li:first-child {
+      width: 30%;
+    }
+    
+    li:not(:first-child) {
+      width: calc(70% / 5);
+      font-size: 0.9rem;
+    }
+  }
+}

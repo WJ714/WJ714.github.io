@@ -1,4 +1,5 @@
 ---
+layout: page-with-sidebar
 permalink: /
 title: "Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle"
 author_profile: true
