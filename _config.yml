@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Dr. Weijie Zhang"
 title_separator          : "-"
 name                     : &name "Weijie Zhang"
-description              : &description "personal description"
+description              : &description "Post-doctoral researcher at UC Berkeley specializing in biogeochemistry, ecosystem dynamics, and climate-ecosystem interactions"
 url                      : https://WJ714.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : #"https://WJ714.github.io" # the subpath of your site, e.g. "/blog"
 repository               : "WJ714/WJ714.github.io"
@@ -48,7 +48,7 @@ author:
   stackoverflow    : # User number or user number and name (i.e., use "1" or "1/jeff-atwood")    
 
   # Social media
-  bluesky          : #"bsky.app" # Replace this with you Bluesky username
+  bluesky          : # "bsky.app" # Replace this with your Bluesky username if you have one
   facebook         : # Username
   flickr           : # Username
   foursquare       : # Username
