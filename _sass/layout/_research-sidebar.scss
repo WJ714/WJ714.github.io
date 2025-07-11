@@ -169,10 +169,31 @@
   }
 }
 
-/* Adjust main content when sidebar is present */
+/* Adjust main content when sidebar is present - Force consistent positioning */
 @media (min-width: 1301px) {
+  /* Target the main content area specifically for pages with sidebar */
   .page {
-    width: 66.66667%;
-    margin-left: 4.16667%;
+    width: 66.66667% !important;
+    margin-left: 4.16667% !important;
+    margin-right: 320px !important; /* Account for fixed sidebar width */
+  }
+  
+  /* Also target the article element for homepage */
+  article.page {
+    width: 66.66667% !important;
+    margin-left: 4.16667% !important;
+    margin-right: 320px !important;
+  }
+  
+  /* Ensure the inner content wrapper also respects the positioning */
+  .page__inner-wrap {
+    max-width: none !important;
+    margin-right: 0 !important;
+  }
+  
+  /* Force consistent positioning for homepage content */
+  .page__content {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
   }
 }
