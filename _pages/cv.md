@@ -1,58 +1,35 @@
 ---
 layout: archive
 title: "CV"
-permalink: /cv/
-author_profile: true
+permalink: /cv-json/
+author_profile: false
 redirect_from:
-  - /resume
+  - /resume-json
 ---
 
 {% include base_path %}
 
-Education
-======
-* Ph.D. at Max Planck Institute for Biogeochemistry [Dr. Martin Jung & Dr. Jacob Nelson (core advisors), Prof. Dr. Markus Reichstein (core collaborator)] and Ghent University [Prof. Dr. Diego Miralles (core advisor)], 2024
-* M.S. in Tree Ring and Paleoclimate Change, Nanjing University, 2020
+<link rel="stylesheet" href="{{ base_path }}/assets/css/cv-style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
-Work experience
-======
-* Postdoc in University of California, Berkeley [Prof. Dr. Trevor Keenan], 2024.11 - Now
+<style>
+  .archive {
+    width: 80%;
+    margin: 0 auto;
+    float: none;
+    padding-right: 0;
+  }
   
-Skills
-======
-* Data Analysis & Statistical Modeling
-  * Time series analysis
-  * Machine learning applications in ecology
-  * Remote sensing data processing
-* Programming & Software
-  * Python, R, MATLAB
-  * GIS and remote sensing tools
-  * Climate and ecosystem modeling
-* Research Areas
-  * Biogeochemistry and ecosystem dynamics
-  * Tree ring and paleoclimate analysis
-  * Carbon cycle and climate interactions
+  @media (min-width: 80em) {
+    .archive {
+      width: 70%;
+    }
+  }
+</style>
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
-  {% endfor %}</ul>
-  
-Teaching
-======
-  <ul>{% for post in site.teaching reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-  
-Service and leadership
-======
-* Peer reviewer for scientific journals
-* Academic conference session organizer
-* Research collaboration coordination
+{% include cv-template.html %}
+
+<div class="cv-download-links">
+  <a href="{{ base_path }}/files/cv.pdf" class="btn btn--primary">Download CV as PDF</a>
+  <a href="{{ base_path }}" class="btn btn--inverse">View Markdown CV</a>
+</div>
