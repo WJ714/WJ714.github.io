@@ -30,9 +30,9 @@
 
 /* Site title on the far left */
 .nav-left {
-  flex: 0 0 250px !important;
+  flex: 0 0 280px !important;
   margin-right: 1rem !important;
-  padding-left: 1rem !important;
+  padding-left: 30px !important; /* Align with moved sidebar */
   margin-left: 0 !important;
 }
 
