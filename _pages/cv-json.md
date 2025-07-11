@@ -1,7 +1,7 @@
 ---
 layout: cv
 title: "CV (JSON-based)"
-permalink: /cv-json/
+permalink: /cv/
 author_profile: true
 redirect_from:
   - /resume-json
