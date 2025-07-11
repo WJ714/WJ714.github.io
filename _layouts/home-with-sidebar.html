@@ -1,0 +1,217 @@
+---
+layout: default
+---
+
+{% include base_path %}
+
+<div id="main" role="main">
+  {% include sidebar.html %}
+
+  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+    <div class="page__inner-wrap">
+      <section class="page__content" itemprop="text">
+        {{ content }}
+      </section>
+    </div>
+  </article>
+
+  <!-- Right Sidebar with Images and Plots -->
+  <div class="page__right-sidebar">
+    <div class="sidebar-widget">
+      <h3><i class="fas fa-chart-line"></i> Research Highlights</h3>
+      
+      <!-- Research Plot 1 -->
+      <div class="sidebar-item">
+        <img src="{{ base_path }}/images/research-plot-1.svg" alt="Carbon Flux Analysis" class="sidebar-image">
+        <p class="sidebar-caption">Global carbon flux trends showing ecosystem uptake patterns</p>
+      </div>
+
+      <!-- Research Plot 2 -->
+      <div class="sidebar-item">
+        <img src="{{ base_path }}/images/research-plot-2.svg" alt="Temperature Analysis" class="sidebar-image">
+        <p class="sidebar-caption">Temperature anomaly analysis across recent decades</p>
+      </div>
+
+      <!-- Research Image -->
+      <div class="sidebar-item">
+        <img src="{{ base_path }}/images/homepage.png" alt="Research Overview" class="sidebar-image">
+        <p class="sidebar-caption">Ecosystem monitoring and remote sensing applications</p>
+      </div>
+
+      <!-- Quick Stats -->
+      <div class="sidebar-item stats-widget">
+        <h4><i class="fas fa-bar-chart"></i> Quick Stats</h4>
+        <div class="stat-item">
+          <span class="stat-number">15+</span>
+          <span class="stat-label">Publications</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Years Experience</span>
+        </div>
+        <div class="stat-item">
+          <span class="stat-number">5+</span>
+          <span class="stat-label">Countries</span>
+        </div>
+      </div>
+
+      <!-- Recent Updates -->
+      <div class="sidebar-item">
+        <h4><i class="fas fa-newspaper"></i> Recent Updates</h4>
+        <ul class="recent-updates">
+          <li><strong>Nov 2024:</strong> Started postdoc at UC Berkeley</li>
+          <li><strong>2024:</strong> Completed Ph.D. at Max Planck Institute</li>
+          <li><strong>2020:</strong> M.S. from Nanjing University</li>
+        </ul>
+      </div>
+
+      <!-- Research Tools -->
+      <div class="sidebar-item">
+        <h4><i class="fas fa-tools"></i> Research Tools</h4>
+        <div class="tool-tags">
+          <span class="tool-tag">Python</span>
+          <span class="tool-tag">R</span>
+          <span class="tool-tag">MATLAB</span>
+          <span class="tool-tag">GIS</span>
+          <span class="tool-tag">Remote Sensing</span>
+          <span class="tool-tag">Machine Learning</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<style>
+/* Right Sidebar Styling */
+.page__right-sidebar {
+  position: fixed;
+  top: 80px;
+  right: 20px;
+  width: 280px;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  z-index: 10;
+}
+
+.sidebar-widget h3 {
+  color: #2c3e50;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #3498db;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.sidebar-item:last-child {
+  border-bottom: none;
+}
+
+.sidebar-image {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+
+.sidebar-caption {
+  font-size: 0.85rem;
+  color: #666;
+  font-style: italic;
+  text-align: center;
+}
+
+.stats-widget .stat-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.stat-number {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3498db;
+}
+
+.stat-label {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.recent-updates {
+  list-style: none;
+  padding: 0;
+}
+
+.recent-updates li {
+  padding: 0.3rem 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.tool-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.tool-tag {
+  background: #ecf0f1;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  color: #2c3e50;
+}
+
+.sidebar-item h4 {
+  color: #34495e;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+  .page__right-sidebar {
+    display: none;
+  }
+}
+
+@media (min-width: 1201px) {
+  .page {
+    @include breakpoint($large) {
+      @include span(8 of 12);
+      @include prefix(0.5 of 12);
+    }
+  }
+}
+
+/* Scrollbar styling for sidebar */
+.page__right-sidebar::-webkit-scrollbar {
+  width: 6px;
+}
+
+.page__right-sidebar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.page__right-sidebar::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.page__right-sidebar::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+</style>
