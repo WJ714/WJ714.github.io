@@ -176,18 +176,6 @@
   position: relative;
   min-width: 250px;
   background: $background-color;
-  
-  @media (max-width: 768px) {
-    .visible-links {
-      flex-direction: column;
-      
-      li:first-child {
-        position: relative;
-        left: auto;
-        margin-bottom: 0.5rem;
-      }
-    }
-  }
 
   a {
     display: block;
@@ -215,20 +203,15 @@
   }
 
   .visible-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
+    display: table;
 
     li {
-      display: flex;
-      align-items: center;
+      display: table-cell;
+      vertical-align: middle;
 
       &:first-child {
         font-weight: bold;
         text-wrap: wrap;
-        position: absolute;
-        left: 1rem;
 
         a {
           margin-left: 0;
@@ -236,13 +219,34 @@
       }
 
       &:not(:first-child) {
-        margin: 0 1rem;
+        text-align: center;
       }
 
       &:last-child {
         a {
           margin-right: 0;
         }
+      }
+    }
+  }
+
+  /* Center only the navigation items, not the site title */
+  .masthead__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .visible-links {
+      width: 100%;
+      
+      /* Keep first item (site title) on the left */
+      li:first-child {
+        text-align: left;
+      }
+      
+      /* Center the navigation menu items */
+      li:not(:first-child) {
+        text-align: center;
       }
     }
 

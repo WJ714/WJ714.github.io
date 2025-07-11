@@ -1,79 +1,24 @@
-/* Custom styles for centered navigation */
+/* Custom styles for centered navigation menu items only */
 
 .greedy-nav .visible-links {
-  margin: 0 auto;
+  /* Keep the original table display */
   display: table;
-  table-layout: auto;
+  width: 100%;
   
-  /* Center the navigation menu */
-  .masthead__menu-item--lg {
-    /* Keep the site title on the left */
-    position: absolute;
-    left: 0;
-  }
-  
-  /* Center all other navigation items */
-  .masthead__menu-item:not(.masthead__menu-item--lg) {
+  li {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
-  }
-}
-
-/* Alternative approach: Center the entire navigation container */
-.masthead__inner-wrap {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-  .masthead__menu {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .greedy-nav {
-    width: auto;
     
-    .visible-links {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 1rem;
-      
-      .masthead__menu-item--lg {
-        position: absolute;
-        left: 1rem;
-        margin-right: auto;
-      }
-      
-      .masthead__menu-item:not(.masthead__menu-item--lg) {
-        flex: 0 0 auto;
-      }
-    }
-  }
-}
-
-/* Responsive adjustments */
-@media (max-width: 768px) {
-  .masthead__inner-wrap {
-    flex-direction: column;
-    
-    .masthead__menu {
-      width: 100%;
+    /* Keep site title (first item) on the left as original */
+    &:first-child {
+      text-align: left;
+      width: auto;
     }
     
-    .greedy-nav .visible-links {
-      flex-wrap: wrap;
-      justify-content: center;
-      
-      .masthead__menu-item--lg {
-        position: relative;
-        left: auto;
-        width: 100%;
-        text-align: center;
-        margin-bottom: 0.5rem;
-      }
+    /* Center only the navigation menu items */
+    &:not(:first-child) {
+      text-align: center;
+      width: auto;
     }
   }
 }
