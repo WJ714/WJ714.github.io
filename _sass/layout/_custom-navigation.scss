@@ -5,6 +5,27 @@
   width: 100% !important;
   padding: 0.5rem 0 !important;
   background: var(--global-bg-color);
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+}
+
+/* Force the masthead to start from the very left */
+.masthead {
+  padding-left: 0 !important;
+  margin-left: 0 !important;
+}
+
+.masthead__inner-wrap {
+  max-width: none !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
+}
+
+.masthead__menu {
+  margin-left: 0 !important;
+  padding-left: 0 !important;
+  width: 100% !important;
 }
 
 /* Site title on the far left */
@@ -12,6 +33,7 @@
   flex: 0 0 250px !important;
   margin-right: 1rem !important;
   padding-left: 1rem !important;
+  margin-left: 0 !important;
 }
 
 .nav-left .site-title {
@@ -20,6 +42,8 @@
   color: var(--global-masthead-link-color) !important;
   text-decoration: none !important;
   padding: 0.5rem 0 !important;
+  margin-left: 0 !important;
+  padding-left: 0 !important;
 }
 
 .nav-left .site-title:hover {
