@@ -15,22 +15,22 @@
     z-index: 10 !important;
   }
   
-  /* Adjust the main content to use full remaining width */
+  /* Adjust the main content to use remaining width but not too far from left */
   #main {
     margin-left: 270px !important; /* Account for sidebar width + margin */
-    width: calc(100% - 290px) !important;
-    max-width: none !important;
+    width: calc(100% - 320px) !important; /* Closer to left side */
+    max-width: 1200px !important; /* Set reasonable max width */
   }
   
-  /* Make the main content article use full width */
+  /* Make the main content closer to left side */
   .page {
-    width: 100% !important;
+    width: 90% !important; /* Not full width to avoid being too wide */
     margin: 0 !important;
     padding: 0 2rem !important;
   }
   
   article.page {
-    width: 100% !important;
+    width: 90% !important;
     margin: 0 !important;
     padding: 0 2rem !important;
   }
@@ -50,13 +50,21 @@
   .page-with-sidebar {
     #main {
       margin-left: 270px !important;
-      width: calc(100% - 610px) !important; /* Account for both sidebars */
+      width: calc(100% - 630px) !important; /* Account for both sidebars + extra space */
     }
     
     .page {
       width: 100% !important;
       margin: 0 !important;
       padding: 0 2rem !important;
+      max-width: calc(100% - 340px) !important; /* Prevent content from going under research sidebar */
+    }
+    
+    article.page {
+      width: 100% !important;
+      margin: 0 !important;
+      padding: 0 2rem !important;
+      max-width: calc(100% - 340px) !important;
     }
   }
 }

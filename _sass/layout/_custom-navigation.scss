@@ -7,10 +7,11 @@
   background: var(--global-bg-color);
 }
 
-/* Site title on the left */
+/* Site title on the far left */
 .nav-left {
-  flex: 0 0 auto !important;
-  margin-right: 2rem !important;
+  flex: 0 0 250px !important;
+  margin-right: 1rem !important;
+  padding-left: 1rem !important;
 }
 
 .nav-left .site-title {
@@ -29,8 +30,9 @@
 .nav-center {
   flex: 1 !important;
   display: flex !important;
-  justify-content: space-evenly !important;
+  justify-content: center !important;
   align-items: center !important;
+  gap: 3rem !important;
 }
 
 .nav-center .nav-item {
