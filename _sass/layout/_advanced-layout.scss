@@ -1,10 +1,10 @@
 /* ADVANCED LAYOUT - Move sidebar to far left, expand content */
 
 @media (min-width: 1024px) {
-  /* Move the author profile sidebar to the left with some margin */
+  /* Move the author profile sidebar to the left with more margin */
   .sidebar {
     position: fixed !important;
-    left: 30px !important;
+    left: 150px !important;
     top: 80px !important;
     width: 250px !important;
     height: calc(100vh - 80px) !important;
@@ -18,8 +18,8 @@
   
   /* Adjust the main content to use remaining width but not too far from left */
   #main {
-    margin-left: 320px !important; /* Account for sidebar width + margin (30px + 250px + 40px) */
-    width: calc(100% - 370px) !important; /* Closer to left side */
+    margin-left: 440px !important; /* Account for sidebar width + margin (150px + 250px + 40px) */
+    width: calc(100% - 490px) !important; /* Closer to left side */
     max-width: 1200px !important; /* Set reasonable max width */
   }
   
@@ -50,8 +50,8 @@
   /* Special handling for homepage with research sidebar */
   .page-with-sidebar {
     #main {
-      margin-left: 320px !important; /* Account for moved sidebar */
-      width: calc(100% - 680px) !important; /* Account for both sidebars + extra space */
+      margin-left: 440px !important; /* Account for moved sidebar */
+      width: calc(100% - 800px) !important; /* Account for both sidebars + extra space */
     }
     
     .page {
