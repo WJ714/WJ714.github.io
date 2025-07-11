@@ -1,56 +1,56 @@
-/* FORCE NAVIGATION LAYOUT - Simple Flexbox */
-.greedy-nav .visible-links {
+/* SIMPLE NAVIGATION SPREAD LAYOUT */
+.masthead__menu .greedy-nav .visible-links {
   display: flex !important;
-  align-items: center !important;
   width: 100% !important;
-  
-  /* Site title stays on the left */
-  li:first-child {
-    flex: 0 0 auto !important;
-    margin-right: 2rem !important;
-  }
-  
-  /* Navigation menu items get equal space in the center */
-  li:nth-child(2), 
-  li:nth-child(3), 
-  li:nth-child(4), 
-  li:nth-child(5), 
-  li:nth-child(6) {
-    flex: 1 !important;
-    text-align: center !important;
-  }
-  
-  /* Theme toggle on the right */
-  li:last-child {
-    flex: 0 0 auto !important;
-    margin-left: 2rem !important;
-  }
-  
-  /* All menu item links */
-  li a {
-    display: block !important;
-    padding: 0.5rem 0.5rem !important;
-    text-align: inherit !important;
-    margin: 0 !important;
-  }
+  align-items: center !important;
+  justify-content: space-between !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none !important;
 }
 
-/* Mobile responsive */
+/* Site title on the left - fixed width */
+.masthead__menu .greedy-nav .visible-links li:first-child {
+  flex: 0 0 auto !important;
+  margin-right: 3rem !important;
+}
+
+/* Navigation items spread evenly across the center space */
+.masthead__menu .greedy-nav .visible-links li:nth-child(2),
+.masthead__menu .greedy-nav .visible-links li:nth-child(3),
+.masthead__menu .greedy-nav .visible-links li:nth-child(4),
+.masthead__menu .greedy-nav .visible-links li:nth-child(5),
+.masthead__menu .greedy-nav .visible-links li:nth-child(6) {
+  flex: 1 !important;
+  text-align: center !important;
+  margin: 0 !important;
+}
+
+/* Theme toggle on the right - fixed width */
+.masthead__menu .greedy-nav .visible-links li:last-child {
+  flex: 0 0 auto !important;
+  margin-left: 3rem !important;
+}
+
+/* Style all navigation links */
+.masthead__menu .greedy-nav .visible-links li a {
+  display: block !important;
+  padding: 0.5rem 1rem !important;
+  text-align: center !important;
+}
+
+/* Mobile responsive adjustments */
 @media (max-width: 768px) {
-  .greedy-nav .visible-links {
-    flex-wrap: nowrap !important;
-    
-    li:first-child {
-      margin-right: 1rem !important;
-    }
-    
-    li:last-child {
-      margin-left: 1rem !important;
-    }
-    
-    li a {
-      padding: 0.5rem 0.3rem !important;
-      font-size: 0.9rem !important;
-    }
+  .masthead__menu .greedy-nav .visible-links li:first-child {
+    margin-right: 1rem !important;
+  }
+  
+  .masthead__menu .greedy-nav .visible-links li:last-child {
+    margin-left: 1rem !important;
+  }
+  
+  .masthead__menu .greedy-nav .visible-links li a {
+    padding: 0.5rem 0.5rem !important;
+    font-size: 0.9rem !important;
   }
 }
