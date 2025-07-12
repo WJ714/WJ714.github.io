@@ -18,8 +18,8 @@
   
   /* Adjust the main content to use remaining width but not too far from left */
   #main {
-    margin-left: 440px !important; /* Account for sidebar width + margin (150px + 250px + 40px) */
-    width: calc(100% - 490px) !important; /* Closer to left side */
+    margin-left: 290px !important; /* Move 150px left: was 440px, now 290px */
+    width: calc(100% - 340px) !important; /* Adjust width accordingly */
     max-width: 1200px !important; /* Set reasonable max width */
   }
   
