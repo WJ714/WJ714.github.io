@@ -50,8 +50,8 @@
   /* Special handling for homepage with research sidebar */
   .page-with-sidebar {
     #main {
-      margin-left: 410px !important; /* Move 30px right: was 380px, now 410px */
-      width: calc(100% - 770px) !important; /* Adjust width accordingly */
+      margin-left: 350px !important; /* Set to 350px as requested */
+      width: calc(100% - 680px) !important; /* Make content box 30px wider (was 710px, now 680px) */
     }
     
     .page {
