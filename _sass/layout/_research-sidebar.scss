@@ -169,34 +169,32 @@
   }
 }
 
-/* Adjust main content when sidebar is present - Better positioning and width */
+/* Adjust main content when sidebar is present - Prevent overlap with research sidebar */
 @media (min-width: 1301px) {
-  /* Make content wider and better positioned */
-  .page {
-    width: 75% !important;
-    margin-left: 12% !important;
-    margin-right: auto !important;
-    padding-right: 0 !important;
+  /* Override the advanced layout for homepage to prevent research sidebar overlap */
+  .page-with-sidebar #main {
+    margin-left: 350px !important;
+    width: calc(100% - 720px) !important;
+    max-width: calc(100% - 370px) !important; /* Ensure content doesn't go under research sidebar */
   }
   
-  /* Also target the article element for homepage */
-  article.page {
-    width: 75% !important;
-    margin-left: 12% !important;
-    margin-right: auto !important;
-    padding-right: 0 !important;
+  .page-with-sidebar .page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2rem !important;
+    max-width: calc(100% - 320px) !important; /* Keep away from research sidebar */
   }
   
-  /* Ensure the main container is properly sized */
-  #main {
-    max-width: calc(100% - 340px) !important; /* Account for sidebar + margin */
-    margin-left: 0 !important;
-    margin-right: 0 !important;
+  .page-with-sidebar article.page {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 2rem !important;
+    max-width: calc(100% - 320px) !important;
   }
   
   /* Adjust the inner content wrapper */
-  .page__inner-wrap {
-    max-width: none !important;
+  .page-with-sidebar .page__inner-wrap {
+    max-width: calc(100% - 320px) !important;
     padding-right: 0 !important;
   }
 }
