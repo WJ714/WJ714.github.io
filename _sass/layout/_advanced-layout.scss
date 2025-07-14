@@ -50,22 +50,22 @@
   /* Special handling for homepage with research sidebar */
   .page-with-sidebar {
     #main {
-      margin-left: 330px !important; /* Set to 350px as requested */
-      width: calc(100% - 710px) !important; /* Set width to 720px as requested */
+      margin-left: 350px !important;
+      width: calc(100% - 720px) !important;
     }
     
     .page {
       width: 100% !important;
       margin: 0 !important;
       padding: 0 2rem !important;
-      max-width: calc(100% - 340px) !important; /* Prevent content from going under research sidebar */
+      max-width: calc(100% - 320px) !important; /* Prevent content from going under research sidebar */
     }
     
     article.page {
       width: 100% !important;
       margin: 0 !important;
       padding: 0 2rem !important;
-      max-width: calc(100% - 340px) !important;
+      max-width: calc(100% - 320px) !important;
     }
   }
 }
