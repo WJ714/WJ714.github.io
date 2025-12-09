@@ -1,34 +1,14 @@
 ---
 layout: page-with-sidebar
 permalink: /
-title: "Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle"
+title: "Focus on Global Surface Energy Balance, Global Warming, Carbon Cycle and Water Cycle, using tools inclduing Eddy Tower observations, remote sensing observations, and Earth sysmte models, and ML/AI models"
 author_profile: true
 redirect_from: 
   - /about/
   - /about.html
 ---
 
-Introduction
+<span style="color: green;">News</span>
 ======
-Our planet absorbs energy from the Sun.
-
-While the overall energy imbalance at the top of the atmosphere is small—meaning the incoming shortwave radiation is nearly equal to the sum of outgoing shortwave and longwave radiation—there is a slight imbalance at the Earth's surface. This imbalance has been exacerbated over the past decades due to global surface warming. Scientists attribute this primarily to the increasing emissions of greenhouse gases, including carbon dioxide ($$CO_2$$), methane ($$CH_4$$), and water vapor ($$H_2O$$), among others.
-
-Global Energy Balance
-------
-See this paper [Stephens et al. (2012)](https://www.nature.com/articles/ngeo1580).
-
-Land Surface Energy Balance
-------
-The land surface exhibits significantly greater complexity compared to the sea surface, driven by the impacts of anthropogenic activities (i.e., $$CO_2$$ emission), the heterogeneity of vegetation and landscapes, and the intricate couplings within the soil-atmosphere system.
-
-Carbon Cycle
-------
-
-
-Water Cycle
-------
-
-
-Water-Carbon Couplings
-------
+- Application for computational resources for running geo-Foundation models for surface carbon and water fluxes are awarded. THANKS to National Artificial Intelligence Research Resource (led by NSF).  
+  **Time:** {{ site.time | date: "%Y-%m-%d" }}
