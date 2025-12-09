@@ -1,7 +1,7 @@
 ---
 layout: page-with-sidebar
 permalink: /
-title: "Welcome"
+title: "Welcome, my friend"
 author_profile: true
 redirect_from: 
   - /about/
@@ -17,7 +17,7 @@ I am a data scientist and eco-hydrologist, specificlly focus on Global Surface E
 
 <span style="color: green;">News</span>
 ======
-- Application for computational resources for running geo-Foundation models for surface carbon and water fluxes is awarded. THANKS to National Artificial Intelligence Research Resource (led by NSF).  
-  **Time:** {{ site.time | date: "%Y-%m-%d" }}
-- Application for Google Cloud Platform for accessing and running Foundation models for carbon monitoring is awarded. THANKS to Google.  
-  **Time:** {{ site.time | date: "2025-May-15" }}
+**{{ site.time | date: "%m/%d/%Y" }}:** Application for computational resources for running geo-Foundation models for surface carbon and water fluxes is awarded. THANKS to National Artificial Intelligence Research Resource (led by NSF).  
+  
+**05/15/2025:** Application for Google Cloud Platform for accessing and running Foundation models for carbon monitoring is awarded. THANKS to Google.  
+  
