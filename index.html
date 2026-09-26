@@ -313,6 +313,19 @@ h2{font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.1;margin:0;
 .soon2{font-family:var(--sans);font-size:.875rem;color:var(--muted);margin:1.25rem 0 0}
 
 /* background */
+.cvsub{margin-top:3.5rem}
+.cvsub h3{font-family:var(--sans);font-size:.8125rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin:0 0 1.25rem}
+.cvcols{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2.5rem}
+@media (max-width:56rem){.cvcols{grid-template-columns:1fr;gap:2.5rem}}
+.cvitems{list-style:none;margin:0;padding:0;display:grid;gap:.85rem}
+.cvitems li{display:grid;grid-template-columns:4.25rem minmax(0,1fr);gap:.75rem;line-height:1.45}
+.cvitems .y{font-family:var(--sans);font-size:.8125rem;color:var(--muted);padding-top:.15rem;font-variant-numeric:tabular-nums}
+.pubs{margin:0;padding:0 0 0 1.4rem;display:grid;gap:1rem;max-width:56rem}
+.pubs li{line-height:1.5;padding-left:.35rem}
+.pubs li::marker{font-family:var(--sans);font-size:.8125rem;color:var(--muted)}
+.pubs .venue{color:var(--muted)}
+.pubs a{font-family:var(--sans);font-size:.75rem;font-weight:500;text-decoration:none;color:var(--link);border:1px solid var(--rule);border-radius:999px;padding:.1rem .55rem;margin-left:.25rem;white-space:nowrap}
+.pubs a:hover{border-color:var(--link)}
 .cv{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.25rem}
 .cv li{background:var(--card);border:1px solid var(--rule);border-radius:18px;padding:1.4rem}
 .cv .yr{font-family:var(--sans);font-size:.8125rem;color:var(--muted)}
@@ -345,7 +358,7 @@ h2{font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.1;margin:0;
   <div class="wrap">
     <a class="mark" href="#top">Weijie Zhang</a>
     <nav aria-label="Sections">
-      <a href="#about">About</a><a href="#research">Research</a><a href="#news">News</a><a href="#tools">Tools</a><a href="#background">Background</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#research">Research</a><a href="#news">News</a><a href="#tools">Tools</a><a href="#cv">CV</a><a href="#contact">Contact</a>
     </nav>
   </div>
 </header>
@@ -491,14 +504,64 @@ h2{font-weight:400;font-size:clamp(2rem,3.6vw,2.75rem);line-height:1.1;margin:0;
     </div>
   </section>
 
-  <section id="background" class="block">
+  <section id="cv" class="block">
     <div class="wrap">
-      <div class="shead"><h2>Background</h2></div>
+      <div class="shead"><h2>CV</h2></div>
       <ul class="cv">
-        <li><div class="yr">2024–now</div><div class="what">Postdoctoral researcher</div><div class="where">University of California, Berkeley, with Prof. Trevor Keenan</div></li>
-        <li><div class="yr">2024</div><div class="what">Ph.D.</div><div class="where">Max Planck Institute for Biogeochemistry &amp; Ghent University. Advisors: Martin Jung, Jacob Nelson, Markus Reichstein, Diego Miralles</div></li>
-        <li><div class="yr">2020</div><div class="what">M.S., Tree Ring and Paleoclimate Change</div><div class="where">Nanjing University</div></li>
+        <li><div class="yr">2026–now</div><div class="what">Postdoctoral researcher</div><div class="where">Earth and Environmental Sciences Area, Lawrence Berkeley National Laboratory, with Trevor Keenan and Qing Zhu. DOE Genesis project: water for data centers</div></li>
+        <li><div class="yr">2024–now</div><div class="what">Postdoctoral researcher</div><div class="where">ESPM, University of California, Berkeley, with Prof. Trevor Keenan. DOE project: drought, heat and wildfire impacts on coastal water relations</div></li>
+        <li><div class="yr">2020–2024</div><div class="what">Ph.D.</div><div class="where">Max Planck Institute for Biogeochemistry &amp; Ghent University. Advisors: Martin Jung, Jacob Nelson, Markus Reichstein, Diego Miralles</div></li>
+        <li><div class="yr">2023–2024</div><div class="what">Research visits</div><div class="where">Northern Arizona University (Andrew Richardson) and Ghent University (Diego Miralles)</div></li>
+        <li><div class="yr">2017–2020</div><div class="what">M.S., Tree Ring and Paleoclimate Change</div><div class="where">Nanjing University</div></li>
+        <li><div class="yr">2013–2017</div><div class="what">B.S., Geography and Remote Sensing</div><div class="where">Xinjiang University</div></li>
       </ul>
+
+      <div class="cvsub">
+        <h3>Selected publications</h3>
+        <ol class="pubs">
+          <li><strong>Zhang, W.</strong>, et al. (2024). A new post-hoc method to reduce the energy imbalance in eddy covariance measurements. <span class="venue"><em>Geophysical Research Letters</em>, 51, e2023GL107084.</span> <a href="https://doi.org/10.1029/2023GL107084">DOI</a></li>
+          <li><strong>Zhang, W.</strong>, et al. (2023). The effect of relative humidity on eddy covariance latent heat flux measurements and its implication for partitioning into transpiration and evaporation. <span class="venue"><em>Agricultural and Forest Meteorology</em>, 330, 109305. FLUXNET Paper of the Year.</span> <a href="https://doi.org/10.1016/j.agrformet.2022.109305">DOI</a></li>
+          <li>Nelson, J. A., …, <strong>Zhang, W.</strong>, et al. (2024). X-BASE: the first terrestrial carbon and water flux products from an extended data-driven scaling framework, FLUXCOM-X. <span class="venue"><em>Biogeosciences</em>, 21, 5079–5115. Highlight paper.</span> <a href="https://doi.org/10.5194/bg-21-5079-2024">DOI</a></li>
+          <li>Kraft, B., …, <strong>Zhang, W.</strong>, et al. (2025). On the added value of sequential deep learning for upscaling evapotranspiration. <span class="venue"><em>Biogeosciences</em>, 22, 3965–3987.</span> <a href="https://doi.org/10.5194/bg-22-3965-2025">DOI</a></li>
+          <li>Li, W., …, <strong>Zhang, W.</strong>, et al. (2023). Widespread and complex drought effects on vegetation physiology inferred from space. <span class="venue"><em>Nature Communications</em>, 14, 4640.</span></li>
+        </ol>
+        <p class="soon2">Full list on <a href="https://scholar.google.com/citations?user=419UbOkAAAAJ">Google Scholar</a>.</p>
+      </div>
+
+      <div class="cvsub cvcols">
+        <div>
+          <h3>Honors &amp; funding</h3>
+          <ul class="cvitems">
+            <li><span class="y">2026</span><span>Remote Sensing &amp; Fluxes for Real-World Impact ($2,500)</span></li>
+            <li><span class="y">2026</span><span><em>HeatHack</em> workshop at NCAR ($2,000)</span></li>
+            <li><span class="y">2026</span><span>Tree-ring for ecology travel award</span></li>
+            <li><span class="y">2025</span><span>NSF NAIRR AI Education Fellowship ($5,000)</span></li>
+            <li><span class="y">2025</span><span>Google Cloud Research Credits ($5,000)</span></li>
+            <li><span class="y">2023</span><span>Inaugural FLUXNET Paper of the Year</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Service</h3>
+          <ul class="cvitems">
+            <li><span class="y">2026</span><span>Primary convener, AGU 2026 Session GC127</span></li>
+            <li><span class="y">2026</span><span>Convener, AmeriFlux Annual Meeting breakout on Earth foundation models</span></li>
+            <li><span class="y">2025–</span><span>FLUXNET2025 Data Support Team</span></li>
+            <li><span class="y">2024</span><span>Panel reviewer, NASA ROSES Carbon Cycle Science</span></li>
+            <li><span class="y">2022</span><span>Organizer, FLUXNET Early Career Network; Cross-Scale ET workshop</span></li>
+            <li><span class="y">Reviewer</span><span>Science Advances, GRL, Remote Sensing of Environment, AFM, J. Hydrology, Biogeosciences, and others</span></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Teaching &amp; talks</h3>
+          <ul class="cvitems">
+            <li><span class="y">2025</span><span>FLUXNET-ECN workshop on energy balance closure corrections, with hands-on session</span></li>
+            <li><span class="y">2023–24</span><span>Guest lectures at Columbia, Peking, Ghent and Northern Arizona universities</span></li>
+            <li><span class="y">2025–</span><span>Mentoring four graduate and visiting students</span></li>
+            <li><span class="y">2026</span><span>Talks: AmeriFlux Annual Meeting; GEWEX Earth’s Energy Imbalance workshop; GEWEX GLASS Panel conference</span></li>
+            <li><span class="y">2021–25</span><span>Talks at AGU Fall Meeting and EGU General Assembly</span></li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 </main>
